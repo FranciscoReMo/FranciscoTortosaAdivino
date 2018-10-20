@@ -3,8 +3,16 @@ import java.util.Scanner;
 public class Aciertos {
 
     public static void main(String[] args) {
+        //Instanciar las variables
         int n = 0,cont = 0;
-        int x = (int) (500 *Math.random());
+        int x = 0;
+        //Minimo y el maximo del numero aleatorio
+        int minimo = 10;
+        int maximo = 50;
+        //Ajustar el numero aleatorio
+        for  (int i = 0; i < 1000; i++){
+            x =(int)Math.floor(Math.random()*(minimo -( maximo +1))+(maximo));
+        }
         //System.out.print(x);
         Scanner sc = new Scanner(System.in);
         do {
